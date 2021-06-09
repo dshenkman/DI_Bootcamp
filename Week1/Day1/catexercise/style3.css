@@ -1,0 +1,25 @@
+.center {
+    padding: 5px 150px;
+
+
+}
+
+* {
+	background-color: rgb(230,251,255);
+}
+
+h1, h2, h3 {
+	color: rgb(0,0,153);
+	 
+}
+
+p, li, div, td, th {
+	color: rgb(0,68,204);
+}
+
+
+
+
+
+
+

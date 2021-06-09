@@ -1,0 +1,49 @@
+body {
+  height: 100%;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/UQ2hoOMsFrWsgzEgNO4tJGAXYZ4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19957064/699433462.jpg.jpg");
+ }
+ nav {
+ 	color: white;
+ 	text-align: right;
+	border: 5px solid red;
+  background-color: rgb(214,39,19);
+  font-family: 'Teko', sans-serif;
+  font-size: 25px;
+  display: block;
+  margin: -10px;
+  height: 60px;
+    
+	}
+
+	li {
+		  list-style-type: none;
+  		padding: 13px;
+  		display: inline;
+}
+
+
+
+h1 {
+	color: rgb(214,7,0);
+	font-family: 'Teko', sans-serif;
+	font-size: 70px;
+
+}
+
+p {
+	color: rgb(214,7,0);
+	font-family: tahoma;
+	font-size: 25px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(214,39,19);
+  text-align: right;
+  font-size: 20px;
+
+}
+

@@ -1,0 +1,44 @@
+* {
+	background-color: rgb(230,232,227);
+}
+
+/*img {
+	height: 400px;
+	width: 400px;
+/*	display: inline-block;*/
+/*
+/*div {
+	background-color: white;
+	display: inline-block;
+	position: relative;
+
+}
+
+p {
+	position: absolute;
+	bottom: 0;
+	display: inline;
+}*/
+
+.item {
+    vertical-align: top;
+    display: inline-block;
+/*    text-align: center;
+*/  width: 200px;
+    margin: 70px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    display: inline-block;
+}
+.caption {
+    display: block;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+
+}
