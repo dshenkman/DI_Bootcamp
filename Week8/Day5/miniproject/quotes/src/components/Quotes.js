@@ -10,7 +10,7 @@ class Quotes extends React.Component {
 
   return (
 
-    <div style = {{backgroundColor: 'white'}}>
+    <div id="box" style = {{backgroundColor: 'white'}}>
 
     <div style = {{color: this.props.displayColor}}>
 

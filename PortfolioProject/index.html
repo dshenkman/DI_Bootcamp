@@ -9,31 +9,35 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 	<link rel="stylesheet" href="main.css">
+
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(6,21,82)">
-		
+	<nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Home</a>
+	    <a id="nav1" class="navbar-brand" href="#">Home</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">About</a>
+	          <a class="nav-link active" aria-current="page" href="#about">About</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Portfolio</a>
+	          <a class="nav-link" href="#portfolio">Portfolio</a>
 	        </li>
-	        <li class="nav-item">
+	        <!-- <li class="nav-item">
 	          <a class="nav-link" href="#">Blog</a>
-	        </li>
+	        </li> -->
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Contact</a>
+	          <a class="nav-link" href="#contact">Contact</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -42,74 +46,102 @@
 
 	<div class="content">
 
-	
+
 	<header>
-		<div class="overlay">
-				<div class="text">
-				  <h1 class="title1">Daniella Shenkman's Portfolio</h1>
-				  <hr>
-				  <p class="hello">Hello, welcome to my official portfolio. Here you will find samples of my work and projects.</p>
-				  
-				  <p>
-				    <a class="btn btn-primary btn-lg" href="#" role="button">See more</a>
-				  </p>
-				 </div>
+		<div class="overlay" id="overlay" >
+				 <div class="text">
+				  <h1 id= "welcome" class="title1 animate__animated animate__bounce">Hi, I'm Daniella Shenkman</h1>
+					<h2 class="title1">Welcome to my Portfolio<h2>
+				  <hr id="hr">
+
+				  <div id="buttoncontainer">
+						<div id="buttoncenter">
+				    	<a class="btn btn-primary btn-lg" href="#portfolio" role="button" id="portbutton">View my work</a>
+						</div>
+
+				  </div>
+				</div>
 		</div>
 	</header>
 
 
-	<div class="about">
+	<div class="about" id="about">
 		<h1 class="about1">About Me</h1>
 		<div class="container-about">
 			<div class="row">
-				<div class=" col-sm-12 col-md-4">
-					<img src="daniellapic.jpeg">
+				<div class=" col-sm-12 col-md-6" id="pic">
+
+					<img src="daniella.jpeg" alt = "daniella picture" id="daniella">
 				</div>
-				<div class="col-sm-12 col-md-8">
-					<h2 class="pb-3 name">Daniella Shenkman</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-sm-12 col-md-6">
+					<p id="bio"> I am a Full Stack Developer, passionate about building and delivering exceptional and impactful software products.
+						 I have experience in HTML, CSS, Bootstrap, JavaScript, React, Redux, Node.js, Express, and PostgresSQL. I attended the Developers Institute Full Stack JavaScript Coding Bootcamp</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
 
-	<div class="Portfolio">
+	<div class="Portfolio" id="portfolio">
 		<h1 class="port">Portfolio</h1>
 		<div class="container">
 		  <div class="row">
-		    <div class="col-sm-12 col-md-4">
-		    	<img class="portimage" src="images/portfolio/classic.jpg">
+		    <div class=" imagegallery col-sm-12 col-md-4" id="imagegallery">
+		    	<img class="portimage" src="hackathon.PNG">
+					<div class="caption">
+						<div class="ctext">
+							WordMix Reading Game
+						</div>
+					</div>
 		    </div>
-		    <div class="col-sm-12 col-md-4">
-		    	<img class="portimage"  src="images/portfolio/electric.png">
+		    <div class=" imagegallery col-sm-12 col-md-4">
+		    	<img class="portimage"  src="hackathon2.PNG">
+					<div class="caption">
+						<div class="ctext">
+							Recipe Finder
+						</div>
+					</div>
 		    </div>
-		    <div class="col-sm-12 col-md-4">
-		    	<img class="portimage"  src="images/portfolio/port1.png">
+		    <div class=" imagegallery col-sm-12 col-md-4">
+		    	<img class="portimage"  src="blog.PNG">
+					<div class="caption">
+						<div class="ctext">
+							Sample Blog Template
+						</div>
+					</div>
 		    </div>
 		  </div>
 		  <br>
 		    <div class="row">
-		    <div class="col-sm-12 col-md-4">
-		    	<img class="portimage"  src="images/portfolio/port3.png">
+		    <div class=" imagegallery col-sm-12 col-md-4">
+		    	<img class="portimage"  src="quote_generator.png">
+					<div class="caption">
+						<div class="ctext">
+							Quote Generator
+						</div>
+					</div>
 		    </div>
-		    <div class="col-sm-12 col-md-4">
-		    	<img class="portimage"  src="images/portfolio/port6.png">
+				<div class=" imagegallery col-sm-12 col-md-4">
+		    	<img class="portimage"  src="tictactoe.PNG">
+					<div class="caption">
+						<div class="ctext">
+							Tic Tac Toe
+						</div>
+					</div>
 		    </div>
-		    <div class="col-sm-12 col-md-4">
-		    	<img class="portimage"  src="images/portfolio/port7.png">
+		    <div class=" imagegallery col-sm-12 col-md-4">
+		    	<img class="portimage"  src="memorygame.PNG">
+					<div class="caption">
+						<div class="ctext">
+							Superhero Matching Game
+						</div>
+					</div>
 		    </div>
 		  </div>
-		</div>	
-	</div>
 
 
 
+<!--
 	<div class="Blog">
 		<h1 class="blog1">Blog</h1>
 			<div class="container">
@@ -145,35 +177,39 @@
 							   	<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							   	<a href="#" class="btn btn-primary">Read more</a>
 							  </div>
-							</div>					
+							</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 
 
 	<footer>
 
-		<div class="Contact">
+		<div class="Contact" id="contact">
 
 		<div class="footercontainer">
 		<div class="row">
 
-			<div class="line col-md-6">
-				<p class="git">Get in Touch</p><br>
-				<div class="icons">			
-				<i class="fab fa-facebook fa-4x"></i>
-				<i class="fab fa-linkedin fa-4x"></i>
-				<i class="fab fa-github-square fa-4x"></i>
+				<h1 class="git">Get in Touch</h1><br>
+				<div class="icons">
+					<a href="https://il.linkedin.com/in/daniella-shenkman-537aba214">
+							<i class="fab fa-linkedin fa-4x"></i>
+					</a>
+					<a href="https://github.com/dshenkman">
+							<i class="fab fa-github-square fa-4x"></i>
+					</a>
+					<a href="mailto:daniellashenkman@gmail.com">
+						<i class="fas fa-envelope-square fa-4x"></i>
+					</a>
 				</div>
 
-			</div>
-			
 
 
 
 
+<!--
 		<div class="col-md-6">
 			<div class="mb-3">
 			  <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -187,15 +223,15 @@
 
 
 
-		</div>
+		</div> -->
 
 
 			</div>
 
 		</div>
 
-		
-	</footer> 
+
+	</footer>
 
 
 </div>
